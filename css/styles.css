@@ -1,0 +1,6 @@
+/* NEW Fitwork styles */
+
+.fw-container {
+	background-image: url(../img/fitwork.jpg);
+	background-size: cover;
+}
