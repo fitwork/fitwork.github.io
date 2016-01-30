@@ -17,7 +17,7 @@ hgroup {
 }
 
 h1 {
-	font-size: rem-calc(100px);
+	font-size: 100em;
 	color: white;
 
 }
