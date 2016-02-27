@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Activity - Calorie Burned by Activities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="fontello/css/fontello.css" rel="stylesheet" > 
+    
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+  <!-- Preloader -->
+<div id="preloader">
+	<div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></div>
+</div>
+<!--  end Preloader -->
+
+ <div id="main-wrapper">
+ 
+	<header>
+            <div id="logo" data-retina="true">
+                <a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></a>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <a id="menu-button-mobile" href="#"><i class=" icon-menu"></i></a><!-- Menu button responsive-->
+            </div>
+            <div class="col-md-6 col-sm-6 sub-nav-container">
+                <nav class="menu_container">
+                <ul class="menu">
+                    <li class="drop-normal">
+                        <a href="#" class="drop-down">Calculators</a>
+                        <div class="drop-down-container normal">
+                            <ul>
+                                <li><a href="daily-calorie-calculator.html">Daily calories calculator</a></li>
+                                <li><a href="calories-burned-by-heart-rate.html">Calories Burned by Heart rate</a></li>
+                                <li><a href="calories-burned-by-activities.html">Calories Burned by Activities</a></li>
+                                <li><a href="BMI-body-mass-calculator.html">BMI Body Mass Calculator</a></li>
+                            </ul>
+                        </div><!-- End dropdown normal -->
+                    </li>
+                    <li class="drop-normal">
+                        <a href="programs.html">Programs</a>
+                    </li>           
+                    <li class="drop-normal"><a href="#" class="drop-down">Pages</a>
+                        <div class="drop-down-container normal">
+                             <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="programs.html">Programs</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="shortcodes.html">Shortcodes</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                            </ul>
+                        </div><!-- End dropdown normal -->
+                    </li>               
+                </ul>
+            </nav>
+            </div> <!-- End col lg 12 -->
+    </header>
+    
+	<div class="row" id="row-main">
+		<div class="col-lg-6 col-md-5" id="main-img-container">
+			<div id="main-img">
+				<img style="margin-left:-200px;" src="img/calories-burned-activity.jpg" alt=""/>
+			</div><!-- End main-img -->
+		</div><!-- End main-img-container -->
+        
+		<div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+			<div class="row" id="content-row">
+                
+				<div class="col-md-12">
+					<h1>Calorie Burned by Activities</h1>
+					<p class="lead">
+						Calorie Burned Calculator is used to estimate the number of calories burned after exercises.
+					</p>
+                    <p> Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+					<hr class="add_bottom_30">
+                    
+                    <form>
+                    <div class="row">
+                    
+                        <div class="col-md-6">
+                            <div class="form-group"><input type="text" name="Weight" class="form-control" placeholder="Weight*"></div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="styled-select">
+                                    <select class="form-control" name="weight_select">
+                                        <option value="kilo">By Kilo (KG)</option>
+                                        <option value="pounds">By Pounds</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> <!-- End row -->
+                    
+                    <div id="activies" class="row clearfix">
+                        <div class="col-md-6">
+                        
+                        	<div class="form-group">
+                            <div class="hours">Hours <input type="text" name="hours_sleep" value="0"></div>
+                            <input type="checkbox" name="sleep" id="sleep"><label for="sleep"><span></span>Sleeping</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" name="hours_watchtv" value="0"></div>
+                            <input type="checkbox" name="watchtv" id="watchtv"><label for="watchtv"><span></span>Watching TV</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_destwork" value="0"></div>
+                            <input type="checkbox" name="destwork" id="destwork"><label for="destwork"><span></span>Typing, Writing, Desk Work</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking17" value="0"></div>
+                            <input type="checkbox" name="walking17" id="walking17"><label for="walking17"><span></span>Walking, very slow, 1.7mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking25" value="0"></div>
+                            <input type="checkbox" name="walking25" id="walking25"><label for="walking25"><span></span>Walking, 2.5mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_bike50" value="0"></div>
+                            <input type="checkbox" name="bike50" id="bike50"><label for="bike50"><span></span>Bicycling, very slow, 50 watts</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking30" value="0"></div>
+                            <input type="checkbox" name="walking30" id="walking30"><label for="walking30"><span></span>Walking, 3.0 mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_home_exercise" value="0"></div>
+                            <input type="checkbox" name="home_exercise" id="home_exercise"><label for="home_exercise"><span></span>Calisthenics, home exercises</label>
+                            </div>
+                                                        
+                            </div><!-- End col-md-6 -->
+                            
+                            <div class="col-md-6">
+                                                       
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking34" value="0"></div>
+                            <input type="checkbox" name="walking34" id="walking34"><label for="walking34"><span></span>Walking 3.4 mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours"> Hours <input type="text" class="textboxEffect" name="hours_bike10mph" value="0"></div>
+                            <input type="checkbox" name="bike10mph" id="bike10mph"><label for="bike10mph"><span></span>Bicycling, lower than 10 mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_bike100" value="0"></div>
+                            <input type="checkbox" name="bike100" id="bike100"><label for="bike100"><span></span>Bicycling, stationary(100 watts)</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_jogging" value="0"> </div>
+                            <input type="checkbox" name="jogging" id="jogging"><label for="jogging"><span></span>Jogging, general</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_calisthenics" value="0"></div>
+                            <input type="checkbox" name="calisthenics" id="calisthenics"><label for="calisthenics"><span></span>Heavy calisthenics</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_jogging_run" value="0"></div>
+                            <input type="checkbox" name="jogging_run" id="jogging_run"><label for="jogging_run"><span></span>Running jogging, in place</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_rope_jump" value="0"></div>
+                            <input type="checkbox" name="rope_jump" id="rope_jump"><label for="rope_jump"><span></span>Rope jumping</label>
+                            </div>
+                            
+                        </div><!-- End col-md-6 -->
+                        <input type="hidden" name="calculator" value="easy_burned"/>
+                    </div><!-- End activities -->
+           		 </form>
+                 
+                 <p><em>*Remember to fill the hours input field.</em></p>
+                
+                <hr>
+                
+                <div class="row">
+                    <div class="col-md-12 text-center"><button id="selectBtn" class="button_medium">Calculate</button></div>
+                </div>
+                
+             
+                <div class="result">
+                    <h3>Result for Total calorie burned</h3>
+                    <div id="easy_cal_burned" class="no_margin_bottom">0.0</div>
+                    
+                    <div class="row" id="activietes_detail">
+                        <div class="col-md-12 text-left">
+                            <h4>Light Intensity <span id="lia_total">0.0</span></h4>
+                            <ul>
+                                <li>Sleeping <span id="sleep_value"> 0.0</span></li>
+                                <li>Watching television <span id="watchtv_value"> 0.0</span></li>
+                                <li>Writing, desk work, typing <span id="destwork_value"> 0.0</span></li>
+                                <li>Walking, 1.7 mph(2.7km/h) <span id="walking17_value"> 0.0</span></li>
+                                <li>Walking, 2.5 mph <span id="walking25_value"> 0.0</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 text-left">
+                            <h4>Moderate Intensity <span id="mia_total">0.0</span></h4>
+                            <ul>
+                                <li>Bicycling, 50 watts <span id="bike50_value">0.0</span></li>
+                                <li>Walking 3.0 mph <span id="walking30_value">0.0</span></li>
+                                <li>Calisthenics, home exercise <span id="home_exercise_value">0.0</span></li>
+                                <li>Walking 3.4 mph <span id="walking34_value">0.0</span></li>
+                                <li>Bicycling <span id="bike10mph_value">0.0</span></li>
+                                <li>Bicycling, 100watts <span id="bike100_value">0.0</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 text-left">
+                            <h4>Vigorous Intensity <span id="via_total">0.0</span></h4>
+                            <ul>
+                                <li>Jogging, general<span id="jogging_value">0.0</span></li>
+                                <li>Heavy calisthenics <span id="calisthenics_value">0.0</span></li>
+                                <li>Running jogging <span id="jogging_run_value">0.0</span></li>
+                                <li>Rope jumping <span id="rope_jump_value">0.0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- End result -->
+                
+                <footer>
+                    	<p>Copyright © 2014</p>
+                        <ul id="contact_follow">
+                            <li><a href="#"><span class="icon-instagram"></span></a></li>
+                            <li><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li><a href="#"><span class=" icon-googleplus"></span></a></li>
+                        </ul>  
+                    </footer><!-- End footer -->
+                
+			</div><!-- End col-md-12 -->
+		</div><!-- End content-row -->
+	</div><!-- End col-lg-6-->
+</div><!-- End main-row -->
+</div><!-- End main-wrapper  -->
+
+<!-- JQUERY -->
+<script src="js/jquery-1.10.min.js"></script>
+
+<!-- OTHER JS --> 
+<script src="js/calories_calculators.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/retina-replace.min.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/functions.js"></script>
+
+  </body>
+</html>
