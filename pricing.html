@@ -31,20 +31,20 @@
   <body>
   <!-- Preloader -->
 <div id="preloader">
-	<div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></div>
+    <div id="status"><img src="img/fitwork-black-horizontal.png" alt="Fitwork Fitness Logo"></div>
 </div>
 <!--  end Preloader -->
 
  <div id="main-wrapper">
  
-	<header>
+    <header>
         <div id="logo" data-retina="true">
-            <a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></a>
+            <!-- <a href="index.html"><h1 class="fw-icon-fitwork-black"></h1></a> -->
+            <a href="index.html"><img src="img/fitwork-black-horizontal-pink.png" alt="Fitwork Fitness Logo"></a>
         </div>
-        <div class="col-md-6 col-sm-6">
-            <a id="menu-button-mobile" href="#"><i class=" icon-menu"></i></a><!-- Menu button responsive-->
-        </div>
-        <div class="col-md-6 col-sm-6 sub-nav-container">
+        <div>
+            <a id="menu-button-mobile" href="#"><i class="icon-menu"></i></a><!-- Menu button responsive-->
+            
             <nav class="menu_container">
                 <ul class="menu">
                     <li class="drop-normal">
@@ -56,11 +56,21 @@
                                 <li><a href="calories-burned-by-activities.html">Calories Burned by Activities</a></li>
                                 <li><a href="BMI-body-mass-calculator.html">BMI Body Mass Calculator</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
+                        </div>
                     </li>
-                    <li class="drop-normal">
-                        <a href="programs.html">Programs</a>
-                    </li>           
+                    
+                    <li class="drop-normal"><a href="#" class="drop-down">Programs</a>
+                        <div class="drop-down-container normal">
+                            <ul>
+                                <li><a href="cardio_program.html">Cardio Program</a></li>
+                                <li><a href="strength-training.html">Strength Training Program</a></li>
+                                <li><a href="#">TRX - Coming Soon</a></li>
+                                <li><a href="#">Pre/Post Natal - Coming Soon</a></li>
+                            </ul>
+                        </div><!-- End dropdown normal -->
+                    </li>          
+                    <li><a href="blog.html">Blog</a></li>
+                    <!--            
                     <li class="drop-normal"><a href="#" class="drop-down">Pages</a>
                         <div class="drop-down-container normal">
                              <ul>
@@ -71,91 +81,76 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
-                    </li>               
+                        </div>
+                    </li>                -->
+                    <li><a href="contacts.html">Contact</a></li>
                 </ul>
             </nav>
         </div> <!-- End col lg 12 -->
+       <div id="header_shadow"></div>
     </header>
     
 	<div class="row" id="row-main">
-		<div class="col-lg-6 col-md-5" id="main-img-container">
-			<div id="main-img"  >
-				<img src="img/01.jpg" alt=""/>
-                <div class="gallery">
-					<a href="img/img_large.jpg" class="fancybox gal-bt" title="Title 1" data-fancybox-group="group1"><i class="icon-camera-1"></i> Gallery</a>
-					<a href="img/img_large_2.jpg" class="fancybox" title="Title 1" data-fancybox-group="group1"></a>
-                    <a href="img/img_large_3.jpg"  class="fancybox" title="Title 1" data-fancybox-group="group1"></a>
-				</div><!-- End gallery -->
-			</div><!-- End main-img -->
-		</div><!-- End main-img-container -->
         
-		<div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+		<div class="col-lg-6 col-lg-offset-3 col-md-12">
 			<div class="row" id="content-row">
                 
 				<div class="col-md-12">
-					<h1>Activity pricing plans</h1>
-					<p class="lead">
-						BMI is a measure of body fat based on height and weight that applies to adult men and women wes anderson cred nesciunt sapiente ea proident. 
-				  </p>
-                    <p> Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-					
+					<h1>Pricing and Services</h1>
                     <hr>
                     
                   <div class="row text-center plans">
             
-                    <div class="plan col-lg-4 col-md-12">
-                        <h2 class="plan-title">Single Course</h2>
-                        <p class="plan-price">$99<span>/00</span></p>
+                    <div class="plan col-lg-4 col-md-4 col-sm-4">
+                        <h2 class="plan-title">Fitness Assessment</h2>
+                        <p class="plan-price">$75<span>/00</span></p>
                         <ul class="plan-features">
-                            <li><strong>Check</strong> included</li>
-                            <li><strong>3 sessions</strong> per week</li>
-                            <li><strong>3 months</strong> valid</li>
+                            <li><strong>Comprehensive Fitness Assessment</strong></li>
+                            <li>Includes <strong>60min </strong>Training Session!</li>
                         </ul>
-                        <p><a href="javascript:void(0)" class="button_medium">Subscribe</a></p>
+                        <p><a href="javascript:void(0)" class="btn-callToAction">Subscribe</a></p>
                     </div> <!-- End col-md-4 -->
                     
-                    <div class="plan plan-tall col-lg-4 col-md-12">
-                    <span class="ribbon"></span>
-                        <h2 class="plan-title">Course + Personal Trainer</h2>
-                        <p class="plan-price">$199<span>/00</span></p>
+                    <div class="plan plan-tall col-lg-4 col-md-4 col-sm-4">
+                        <h2 class="plan-title">20 Session Package</h2>
+                        <p class="plan-price">$800<span>/00</span></p>
                         <ul class="plan-features">
-                            <li><strong>Check</strong> included</li>
-                            <li><strong>3 sessions</strong> per week</li>
-                            <li><strong>3 months</strong> valid</li>
+                            <li><strong>Fitness Assessment</strong> included</li>
+                            <li><strong>$40</strong> per session</li>
+                            <li>Flexible payment options available</li>
                         </ul>
-                        <p><a href="javascript:void(0)" class=" button_medium">Subscribe</a></p>
+                        <p><a href="javascript:void(0)" class="btn-callToAction">Subscribe</a></p>
                     </div><!-- End col-md-4 -->
                     
-                     <div class="plan col-lg-4 col-md-12">
-                        <h2 class="plan-title">6 Months Pack</h2>
-                        <p class="plan-price">$299<span>/00</span></p>
+                    <div class="plan col-lg-4 col-md-4 col-sm-4">
+                    <!-- <span class="ribbon"></span> -->
+                        <h2 class="plan-title">10 Session Package</h2>
+                        <p class="plan-price">$450<span>/00</span></p>
                         <ul class="plan-features">
-                            <li><strong>Check</strong> included</li>
-                            <li><strong>3 sessions</strong> per week</li>
-                            <li><strong>6 months</strong> valid</li>
+                                <li><strong>Fitness Assessment</strong> included</li>
+                                <li><strong>$45</strong> Per session</li>
                         </ul>
-                        <p><a href="javascript:void(0)" class="button_medium">Subscribe</a></p>
+                        <p><a href="javascript:void(0)" class="btn-callToAction">Subscribe</a></p>
                     </div><!-- End col-md-4 -->
+                    
+
                     
                 </div><!-- End row plans-->
                     
-                    <div class=" table-responsive">
+                    <!-- <div class=" table-responsive">
 						<table class="table table-striped">
 						<thead>
 						<tr>
 							<th>&nbsp;</th>
-							<th>
-								Bronze Plan</th>
-							<th>Silver Plan</th>
-							<th>Gold Plan</th>
+							<th>Beginner</th>
+							<th>Intermediate</th>
+							<th>Advanced</th>
 						  </tr>
 						</thead>
 						<tbody>
 						<tr>
 							<td><strong>Cardio</strong></td>
-							<td>
-								$89</td>
+							<td>$89</td>
 							<td>$189</td>
 							<td>$289</td>
 						  </tr>
@@ -179,15 +174,103 @@
 						  </tr>
 						</tbody>
 						</table>
-					</div>
+					</div> -->
+                    <div class="media-body">
+                        <h4><strong>Comprehensive Fitness Assessment</strong></h4>
+                        <h4>Included in the assessment:</h4>
+                        <ul>
+                             <li>Blood Pressure</li>
+                             <li>BMI</li>
+                             <li>Resting Heart Rate</li>
+                             <li>General Nutritional Information</li>
+                             <li>Measurements</li>
+                             <li>Health History</li>
+                             <li>Physical Activity Readiness</li>
+                             <li>Exercise Habits</li>
+                             <li>Expectations</li>
+                             <li>Goals</li>
+                             <li>Activity Preferences</li>
+                             <li>Special Interests</li>
+                       </ul>
+                        <hr>
+                        <ul class="data-lessons">
+                            <li><i class="icon-clock"></i>Duration: 60 Minutes</li>
+                            <li><strong>$75.00</strong></li>
+                            <li><button class="btn btn-success">Buy Now</button></li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="media-body">
+                        <h4>General Assistance &amp; Exercise Demonstration</h4>
+                        <p>
+                            Perfect for individuals who may be interested in leading a more active lifestyle from the convenience of their own home, individuals requiring assistance or knowledge on what equipment to use in their home, how to use exercise equipment in condominium buildings or apartment buildings safely and effectively, learn which exercise equipment will work best for your lifestyle and improve results.
+                        </p>
+                        <hr>
+                        <ul class="data-lessons">
+                            <li><i class="icon-clock"></i>Duration: 60 - 120 min</li>
+                            <li><strong>$150.00*</strong></li>
+                            <li><button class="btn btn-success">Buy Now</button></li>
+                        </ul>
+                        <h6>* Complimentary Fitness Assessment included</h6>
+                        <hr>
+                    </div>
+                    <div class="media-body">
+                        <h4>Single Private Personal Training Session</h4>
+                        <p>
+                            All Training sessions available @ client home, client gym or outdoors (weather permitting).
+                        </p>
+                        <hr>
+                        <ul class="data-lessons">
+                            <li><i class="icon-clock"></i>Duration: 60 min</li>
+                            <li><strong>$50.00</strong></li>
+                            <li><button class="btn btn-success">Buy Now</button></li>
+                        </ul>
+                        <hr>
+                    </div>
+
+                    <div class="media-body">
+                        <h4>Partner Sessions/ Small Group Sessions</h4>
+                        <ul>
+                            <li>
+                                Two - Three clients <strong>maximum</strong>
+                            </li>
+                            <li> 20 (60 min) Private Personal Training Sessions</li>
+
+                        </ul>
+                        <hr>
+                        <ul class="data-lessons">
+                            <li><i class="icon-clock"></i>Duration: 60 min x 20</li>
+                            <li><strong>$300.00 ea. / $30 per session</strong></li>
+                            <li><button class="btn btn-success">Buy Now</button></li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="media-body">
+                        <h4>Post Session Completion Comprehensive Fitness Assessment </h4>
+                        <p>If you would like a follow up comprehensive fitness assessment in order to document your results receive one at a reduced cost.</p>
+                        <hr>
+                        <ul class="data-lessons">
+                            <li><strong>$35.00</strong></li>
+                            <li><button class="btn btn-success">Buy Now</button></li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="media-body">
+                        <h4>Special Offers with the purchase of 10 or more Private Training Sessions</h4>
+                        <p>If you would like to commit to a before and after picture taken, receive a complimentary 60min Private Personal Training Session.</p>
+                        <p>If you would like us to post your positive feedback about your results/sessions receive a complimentary 60min Private Personal Training Session</p>
+                        <hr>
+                        <ul class="data-lessons">
+                            <li><strong>Free Session</strong></li>
+                            <li><button class="btn btn-success">Yes, I would like to recieve a FREE session!</button></li>
+                        </ul>
+                        <hr>
+                    </div>
                     
                     <footer>
-                    	<p>Copyright © 2014</p>
+                    	<p>Copyright &copy; 2016</p>
                         <ul id="contact_follow">
-                            <li><a href="#"><span class="icon-instagram"></span></a></li>
-                            <li><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li><a href="#"><span class=" icon-googleplus"></span></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/fitwork.ca/"><span class="icon-instagram"></span></a></li>
                         </ul>  
                     </footer><!-- End footer -->
                                     

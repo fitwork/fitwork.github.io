@@ -16,12 +16,12 @@ CSS STRUCTURE:
 /* 1.  SITE STRUCTURE and TYPOGRAPHY */
 /*============================================================================================*/
 /* Fonts and Icons */
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
-@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800');
-@import url('http://fonts.googleapis.com/css?family=Lato:400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
-@import url('https://fonts.googleapis.com/css?family=Yesteryear');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans'),
+		url('http://fonts.googleapis.com/css?family=Montserrat:400,700'),
+		url('http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800'),
+		url('http://fonts.googleapis.com/css?family=Lato:400,700,900'),
+		url('https://fonts.googleapis.com/css?family=Satisfy'),
+		url('https://fonts.googleapis.com/css?family=Yesteryear');
 @font-face {
     font-family: 'fitworkca';
     src:    url('../assets/fonts/fitworkca.eot?3y9mdf');
@@ -94,15 +94,28 @@ html, body {
 }
 body {
 	font-family: 'Raleway', sans-serif;
-	font-size:14px;
+	font-size:16px;
 	line-height:22px;
 	margin:0;
 	background:#fff url(../img/bg.png) repeat 0 0;
-	color:#555;
+	background-size: cover;
+	color:#212121;
 }
 #main-wrapper {
 	height:100%;
 }
+
+/* COLORS */
+
+.dark-primary-color    { background: #C2185B; }
+.default-primary-color { background: #E91E63; }
+.light-primary-color   { background: #F8BBD0; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #03A9F4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #B6B6B6; }
+
 header {
 	width:100%;
 	position:fixed;
@@ -110,25 +123,37 @@ header {
 	left:0;
 	z-index:99;
 	height:65px;
-	/*background:#fff;*/
+	background:#fff;
+	display: flex;
+	justify-content: space-between;
+	padding-left:10px;
+}
+
+#logo {
+	display:flex;
+	align-items: center;
+	width: 215px;
+	height: auto;
 }
 #logo a {
-	width:160px;
+	display: block;
+	/*width:160px;
 	height:40px;
 	display:block;
 	position:absolute;
 	left:20px;
 	top:12px;
-	z-index:9;
+	z-index:9;*/
 }
 #header_shadow{
 	position:absolute;
 	left:0;
-	bottom:-5px;
+	bottom:-3px;
 	width:100%;
-	height:5px;
+	height:3px;
 	z-index:99;
 	background: url(../img/header_shadow.png) repeat-x 0 0;
+	opacity: 0.5;
 }
 #row-main {
 	margin:0; 
@@ -137,7 +162,7 @@ header {
 #main-img-container {
 	height:100%; 
 	position:fixed;
-	top:0;
+	top:65px;
 	left:0;
 	overflow:hidden; 
 	margin-left:-20px;
@@ -161,12 +186,23 @@ header {
 	padding-top:90px;
 	padding-right:20px;
 }
+
+.contact-wrapper {
+	position:relative;
+	height:100%;
+}
 footer{
 	text-align:center;
 	border-top: 3px solid #eee;
 	padding-top:20px;
 	margin-top:15px;
 	font-size:12px;
+}
+footer.contact-footer {
+	position: absolute; 
+	bottom:0; 
+	left:0; 
+	right:0;
 }
 footer p{margin-bottom:10px;}
 
@@ -175,19 +211,19 @@ p {
 	margin-bottom:20px;
 }
 a {
-  color: #29abe0;
+  color: #C2185B;
   text-decoration: none;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 a:hover,
 a:focus {
-  color: #000;
+  color: #E91E63;
   text-decoration: none;
 }
 h1,h2,h3,h4,h5,h6 {
   	font-family: 'Raleway', sans-serif;
-	color:#111;
+	color:#333;
 }
 h1 {
 	text-transform:uppercase;
@@ -231,6 +267,11 @@ h2.site-logo {
 .box_calculator img {
 	height: 100%;
 	width: 100px;
+}
+.box_calculator a {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 .box_style_1 h4{
 	border-bottom: 1px solid #eee;
@@ -281,7 +322,7 @@ a.btn-info, .btn-info {
 a.button_medium, .button_medium, input.button_medium {
 	border:none;
 	background:none;
-	color:#29abe0;
+	color: #03A9F4;
 	padding:7px 20px;
 	text-decoration:none; 
 	transition: background .5s ease; 
@@ -292,11 +333,52 @@ a.button_medium, .button_medium, input.button_medium {
 	cursor:pointer;
 	font-weight:600;
 	text-transform:uppercase;
-	border: 1px solid #29abe0;
+	border: 1px solid #03A9F4;
 	outline:none;
 	margin-bottom:20px;
 }
-a.button_medium:hover, .button_medium:hover, input.button_medium:hover {background:#29abe0; color:#fff;}
+a.button_medium:hover, .button_medium:hover, input.button_medium:hover {background:#03A9F4; color:#fff;}
+
+div.button-container {
+	display: -webkit-flex;
+   	display: flex;
+   	-webkit-flex-direction: row /* works with row or column */
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+a.btn-callToAction {
+	border: 1px solid #8dc63f;
+	color: #8dc63f;
+	padding: 10px 20px;
+	text-decoration:none; 
+	transition: background .5s ease; 
+	-moz-transition: background .5s ease; 
+	-webkit-transition: background .5s ease; 
+	-o-transition: background .5s ease; 
+	display:inline-block;
+	cursor:pointer;
+	font-weight:600;
+	text-transform:uppercase;
+	outline:none;
+	margin:20px 0;
+	max-width:300px;
+	width: 100%;
+	background:#8dc63f; color:#fff;
+	text-align: center;
+}
+
+a.btn-callToAction:hover {
+	background: #fff;
+	color: #8dc63f;
+}
+
+p > a.btn-callToAction {
+	margin: 0 0 20px 0;
+}
 
 .review_strip{
 	background:#f8f8f8;
@@ -315,6 +397,8 @@ a.button_medium:hover, .button_medium:hover, input.button_medium:hover {backgrou
 }
 
 .rating{ color:#FC0}
+
+
 
 /*============================================================================================*/
 /* 2.  PAGES AND CONTENT */
@@ -511,6 +595,7 @@ ul.data-lessons  li:first-child{
   background-color:#fff;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  min-height: 370px;
 }
 
 .plan-title {
@@ -948,17 +1033,22 @@ input[type="radio"]:checked + label span {
 	padding-top:30px
 }
 .result {
-	background-color:#8dc63f;
+	background-color:#E91E63;
 	color:#fff;
 	text-align:center;
 	font-size:66px;
 	font-weight:800;
 	padding:10px 20px 40px 20px;
 	margin-bottom:30px;
-	font-family:"Helvetica Neue", Arial;
+	font-family:"Roboto", sans-serif;
+	display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .box_calculator a{
-	background-color:#8dc63f ;
+	background-color:#E91E63;
 	padding:20px 20px 5px 20px;
 	margin-bottom:10px;
 	text-align:center;
@@ -971,7 +1061,7 @@ input[type="radio"]:checked + label span {
 	-moz-transition: background .8s ease;
 }
 .box_calculator a:hover{
-	background-color:#00aeef;
+	background-color:#C2185B;
 	text-decoration:none;
 }
 .box_calculator h3{
@@ -996,14 +1086,14 @@ input[type="radio"]:checked + label span {
 	margin-bottom:20px;
    }
    #activietes_detail ul li{
-	   background:#82b73a;
+	   background:#C2185B;
 	   padding:3px 8px;
 	   margin-bottom:3px;
    }
     
 #activietes_detail h4 span, #activietes_detail ul li span{
 	   float:right;
-	   color:#FF9;
+	   color:#FFF;
 }
 
 #indicator {
@@ -1036,6 +1126,20 @@ input[type="radio"]:checked + label span {
   -webkit-transition: none;
   transition: width 0.6s ease;
 }
+
+.progress-bar-danger {
+	background-color: #E91E63 !important;
+}
+.progress-bar-info {
+	background-color: #03A9F4 !important;
+}
+.progress-bar-success {
+	background-color: #CDDC39 !important;
+}
+.progress-bar-warning {
+	background-color: #FFC107 !important;
+}
+
 #calculators_home{
 	z-index:99;
 	position:absolute;
@@ -1044,6 +1148,11 @@ input[type="radio"]:checked + label span {
 	width:100%;
 	text-align:center;
 }
+
+.media > .pull-left {
+	margin-right: 30px;
+}
+
 
 /*============================================================================================*/
 /* 4.  COMMON */
@@ -1060,7 +1169,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid #B6B6B6;
 }
 /* carousel*/
 .carousel .review_strip{
@@ -1150,35 +1259,96 @@ html[data-useragent*='MSIE 10.0'] input, html[data-useragent*='MSIE 10.0'] .btn.
   border-radius:0;
 }
 
+/* Fitwork -  Background images for each section */
+
+	/* Calculators */
+		.daily-calories {
+			background: url(../img/calculators/calorie-counter.jpg) 50% 50% no-repeat;
+			background-size: cover;
+		}
+		.bmi {
+			background: url(../img/calculators/bmi.jpg) 50% 50% no-repeat;
+			background-size: cover;
+		}
+		.calories-heart-rate {
+			background: url(../img/calculators/calories-burned-heartrate.jpg) 50% 50% no-repeat;
+			background-size: cover;
+		}
+
+		.calories-activity {
+			background: url(../img/calculators/calories-burned-activity.jpg) -300px 50% no-repeat;
+			background-size: cover;
+		}
+
+	/* Programs main page images */
+
+		.program-slide-1 {
+			background: url(../img/cardio/cardio-program-1.jpg) 50% 50% no-repeat;
+			background-size: cover;
+		}
+		.program-slide-2 {
+			background: url(../img/toning/toning-program-2.jpg) 50% 50% no-repeat;
+			background-size: cover;
+		}
+		.program-slide-3 {
+			background: url(../img/trx/trx-program-3.jpg) 50% 50% no-repeat;
+			background-size: cover;
+		}
+		.program-slide-4 {
+			background: url(../img/pp-natal/pp-natal-5.jpg) 50% 50% no-repeat;
+			background-size: cover;
+		}
+
 /*============================================================================================*/
 /* 5.  MEDIA QUERIES */
 /*============================================================================================*/
 @media (min-width: 768px) and (max-width: 979px) {
-header {position:absolute;}
-#main-img-container {
-	position:relative; 
-	overflow:hidden; 
-	top:65px;
-	height:350px;
-	width:100%;
-	margin-left:0;
-}
-#main-img img{
-	height:auto; 
-	width:100%;
-}
+	header {position:absolute;}
+	#main-img-container {
+		position:relative; 
+		overflow:hidden; 
+		top:65px;
+		height:350px;
+		width:100%;
+		margin-left:0;
+	}
+	#main-img img{
+		height:auto; 
+		width:100%;
+	}
 
-#content-row{
-	height:auto;
-	padding-top:90px;
-	padding-right:0;
-}
-.plan-tall + .plan {border: solid #dddddd 1px;}
-.plan-tall {margin-right:0;}
-.col-md-4.plan:first-child {
-  margin-right:0;
-  margin-left:0;
-}
+	#content-row{
+		height:auto;
+		padding-top:90px;
+		padding-right:0;
+	}
+	.plan-tall + .plan {border: solid #dddddd 1px;}
+	.plan-tall {margin-right:0;}
+	.col-md-4.plan:first-child {
+	  margin-right:0;
+	  margin-left:0;
+	}
+	.daily-calories {
+		background: url(../img/calculators/calorie-counter.jpg) 0 20% no-repeat;
+		background-size: cover;
+	}
+
+	.calories-activity {
+		background: url(../img/calculators/calories-burned-activity.jpg) 50% 50% no-repeat;
+		background-size: cover;
+	}
+	.calories-heart-rate {
+		background: url(../img/calculators/calories-burned-heartrate.jpg) 50% 37% no-repeat;
+		background-size: cover;
+	}
+	.bmi {
+		background: url(../img/calculators/bmi.jpg) 0 20% no-repeat;
+		background-size: cover;
+	}
+
+	#activietes_detail {
+		width:100%;
+	}
 
 }
 	
@@ -1206,9 +1376,10 @@ header {position:absolute;}
 header{
 	height:auto;
 	position:relative;
-	overflow:hidden;
+	/*overflow:hidden;*/
 	border-bottom:1px solid #ededed;
-	padding-bottom:15px;
+	padding: 10px;
+	align-items: center;
 }
 .modal {
   -webkit-overflow-scrolling: touch;
@@ -1242,6 +1413,7 @@ h1 {
 	position:relative;
 	top:30px;
 	left:0;
+	z-index:1;
 }
 .col-md-4.plan:first-child, 
 .col-md-4.plan:last-child {
@@ -1256,24 +1428,59 @@ h1 {
 		border: solid #dddddd;
 	}
 	.plan-tall {margin-right:0;}
-
+	.daily-calories {
+		background: url(../img/calculators/calorie-counter.jpg) 0 30% no-repeat;
+		background-size: cover;
+	}
+	.bmi {
+		background: url(../img/calculators/bmi.jpg) 0 20% no-repeat;
+		background-size: cover;
+	}
+	.calories-heart-rate {
+		background: url(../img/calculators/calories-burned-heartrate.jpg) 0 30% no-repeat;
+		background-size: cover;
+	}
+	.calories-activity {
+		background: url(../img/calculators/calories-burned-activity.jpg) 50% 50% no-repeat;
+		background-size: cover;
+	}
 }	
 
 /* Mobile portrait */
 @media (max-width: 480px) {
-#main-img img{
-	height:auto; 
-	width:100%;
-	position:relative;
-	top:0;
+	#main-img img{
+		height:auto; 
+		width:100%;
+		position:relative;
+		top:0;
+	}
+	.video{height: 250px;}
+	ul.data-lessons li{
+		display:block;
+		margin-left:0;
+		padding-left:0;
+		border-left: 0;
+		margin-top:5px;
+	}
+	.classes.media > .pull-left{float:none !important; margin-left:0;}
+
+	.daily-calories {
+		background: url(../img/calculators/calorie-counter.jpg) 0 20% no-repeat;
+		background-size: cover;
+	}
+	.bmi {
+		background: url(../img/calculators/bmi.jpg) 0 20% no-repeat;
+		background-size: cover;
+	}
+	.calories-heart-rate {
+		background: url(../img/calculators/calories-burned-heartrate.jpg) 0 20% no-repeat;
+		background-size: cover;
+	}
+	.calories-activity {
+		background: url(../img/calculators/calories-burned-activity.jpg) 50% 50% no-repeat;
+		background-size: cover;
+	}
 }
-.video{height: 250px;}
-ul.data-lessons li{
-	display:block;
-	margin-left:0;
-	padding-left:0;
-	border-left: 0;
-	margin-top:5px;
-}
-.classes.media > .pull-left{float:none !important; margin-left:0;}
-}
+
+
+

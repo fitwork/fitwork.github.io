@@ -5,7 +5,7 @@
 <html>
   <head>
   	<meta charset="utf-8">
-    <title>Activity - Daily calories calculator</title>
+    <title>Fitwork - Daily Calorie Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <!-- Favicons-->
@@ -28,23 +28,23 @@
     
   </head>
   <body>
-  <!-- Preloader -->
+ <!-- Preloader -->
 <div id="preloader">
-	<div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></div>
+    <div id="status"><img src="img/fitwork-black-horizontal.png" alt="Fitwork Fitness Logo"></div>
 </div>
 <!--  end Preloader -->
 
  <div id="main-wrapper">
  
-	<header>
-		<div id="logo" data-retina="true">
-			<a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></a>
-		</div>
-		<div class="col-md-6 col-sm-6">
-			<a id="menu-button-mobile" href="#"><i class=" icon-menu"></i></a><!-- Menu button responsive-->
+    <header>
+        <div id="logo" data-retina="true">
+            <!-- <a href="index.html"><h1 class="fw-icon-fitwork-black"></h1></a> -->
+            <a href="index.html"><img src="img/fitwork-black-horizontal-pink.png" alt="Fitwork Fitness Logo"></a>
         </div>
-        <div class="col-md-6 col-sm-6 sub-nav-container">
-			<nav class="menu_container">
+        <div>
+            <a id="menu-button-mobile" href="#"><i class="icon-menu"></i></a><!-- Menu button responsive-->
+            
+            <nav class="menu_container">
                 <ul class="menu">
                     <li class="drop-normal">
                         <a href="#" class="drop-down">Calculators</a>
@@ -55,11 +55,21 @@
                                 <li><a href="calories-burned-by-activities.html">Calories Burned by Activities</a></li>
                                 <li><a href="BMI-body-mass-calculator.html">BMI Body Mass Calculator</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
+                        </div>
                     </li>
-                    <li class="drop-normal">
-                        <a href="programs.html">Programs</a>
-                    </li>           
+                    
+                    <li class="drop-normal"><a href="#" class="drop-down">Programs</a>
+                        <div class="drop-down-container normal">
+                            <ul>
+                                <li><a href="cardio_program.html">Cardio Program</a></li>
+                                <li><a href="strength-training.html">Strength Training Program</a></li>
+                                <li><a href="#">TRX - Coming Soon</a></li>
+                                <li><a href="#">Pre/Post Natal - Coming Soon</a></li>
+                            </ul>
+                        </div><!-- End dropdown normal -->
+                    </li>          
+                    <li><a href="blog.html">Blog</a></li>
+                    <!--            
                     <li class="drop-normal"><a href="#" class="drop-down">Pages</a>
                         <div class="drop-down-container normal">
                              <ul>
@@ -70,17 +80,19 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
-                    </li>               
+                        </div>
+                    </li>                -->
+                    <li><a href="contacts.html">Contact</a></li>
                 </ul>
             </nav>
-		</div> <!-- End col lg 12 -->
-	</header>
+        </div> <!-- End col lg 12 -->
+       <div id="header_shadow"></div>
+    </header>
     
 	<div class="row" id="row-main">
 		<div class="col-lg-6 col-md-5" id="main-img-container">
-			<div id="main-img" class="vertical-img">
-				<img src="img/calorie-counter.jpg" alt="Woman eating bowl of salad"/>
+			<div id="main-img" class="vertical-img daily-calories">
+				<!--<img src="img/calculators/calorie-counter.jpg" alt="Woman eating bowl of salad"/>-->
 			</div><!-- End main-img -->
 		</div><!-- End main-img-container -->
         
@@ -88,11 +100,16 @@
 			<div class="row" id="content-row">
                 
 				<div class="col-md-12">
-					<h1>Daily calories calculator</h1>
+					<h1>Daily Calorie Calculator</h1>
 					<p class="lead">
-					Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel. Ubique ceteros mediocritatem eos .
+					Our bodies require six vital nutrients in order for it to function.
 					</p>
-                    <p> Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    <p> 
+                        Three of these nutrients are carbohydrates, fat and protein.  These nutrients are considered vital as they each provide our body with a source of energy or fuel.
+                    </p>
+                    <p>
+                        Energy provided by food can be measured and is called a calorie.  The more active we are the more energy or fuel our bodies require.  Here you will find an approximate calculation of the energy required (calories) given your activity level.
+                    </p>
 					
                     <hr class="add_bottom_30">
                     
@@ -159,32 +176,58 @@
                     
                     <hr>
                     
-                    <h3>Your block lists</h3>
-                        <p>Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel labore nostrum periculis ius in. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-                        <div class="row">
-                    	<div class="col-md-6 col-sm-6">
-                        	<ul class="list_1">
-                                <li><a href="#">Ceteros mediocritatem</a></li>
-                                <li><a href="#">Labore nostrum</a></li>
-                                <li><a href="#">Primis bonorum</a></li>
-                            </ul>
+                    <div class="panel-group" role="tablist" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        Carbohydrates<i class="indicator icon-plus pull-right"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
+                                <div class="panel-body">
+                                     Some good sources of carbohydrates are:  fruits, vegetables, whole grains and dairy products. One gram of carbohydrates is equal to four calories.  Carbohydrates are best for providing energy or fuel for high intensity exercise. 
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                        	<ul class="list_2">
-                                <li><a href="#">Electram instructior </a></li>
-                                <li><a href="#">Electram</a></li>
-                                <li><a href="#">Melius eruditi </a></li>
-                            </ul>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        Fats<i class="indicator icon-plus pull-right"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+                                <div class="panel-body">
+                                     Fats are also known as lipids, when in solid form lipids are called fat and in liquid form called oils.  Fats provide fuel in a large concentration of calories.  Fats should be consumed in moderation and are essential for many bodily functions.  Some examples of good fats are:  olive oil, nuts, seeds and avocados. One gram of fat provides nine calories.  Fats are used by the body for sustained low intensity exercise. However,  this does not mean over all body weight will be decreased. 
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- End row -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        Proteins<i class="indicator icon-plus pull-right"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                                <div class="panel-body">
+                                     Proteins are not used by the body as a major energy or fuel source unless you do not consume enough carbohydrates and fats due to starvation by not eating, overtraining or by not consuming enough calories from dietary restrictions.  Proteins are very complex and very important.  Proteins are used by the body to build and repair muscular tissue such as muscles, tendons and ligaments. It is also very important to note good sources of protein will contain all nine essential amino acids, some examples are:  fish, dairy products, meat and eggs.  Incomplete protein examples are:  nuts, beans, legumes and seeds. One gram of protein provides four calories.  
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--  Collapse -->
                     
                     <footer>
-                    	<p>Copyright © 2014</p>
+                        <p>Copyright &copy; 2016</p>
                         <ul id="contact_follow">
-                            <li><a href="#"><span class="icon-instagram"></span></a></li>
-                            <li><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/fitwork.ca/"><span class="icon-instagram"></span></a></li>
+                            <!-- <li><a href="#"><span class="icon-facebook"></span></a></li>
                             <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li><a href="#"><span class=" icon-googleplus"></span></a></li>
+                            <li><a href="#"><span class=" icon-googleplus"></span></a></li> -->
                         </ul>  
                     </footer><!-- End footer -->
                 

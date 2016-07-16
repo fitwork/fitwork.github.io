@@ -28,22 +28,22 @@
     
   </head>
   <body>
-  <!-- Preloader -->
+<!-- Preloader -->
 <div id="preloader">
-	<div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></div>
+	<div id="status"><img src="img/fitwork-black-horizontal.png" alt="Fitwork Fitness Logo"></div>
 </div>
 <!--  end Preloader -->
 
  <div id="main-wrapper">
  
-		<header>
+	<header>
 		<div id="logo" data-retina="true">
-			<a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></a>
+			<!-- <a href="index.html"><h1 class="fw-icon-fitwork-black"></h1></a> -->
+            <a href="index.html"><img src="img/fitwork-black-horizontal-pink.png" alt="Fitwork Fitness Logo"></a>
 		</div>
-		<div class="col-md-6 col-sm-6">
-			<a id="menu-button-mobile" href="#"><i class=" icon-menu"></i></a><!-- Menu button responsive-->
-        </div>
-        <div class="col-md-6 col-sm-6 sub-nav-container">
+		<div>
+			<a id="menu-button-mobile" href="#"><i class="icon-menu"></i></a><!-- Menu button responsive-->
+            
 			<nav class="menu_container">
     			<ul class="menu">
                     <li class="drop-normal">
@@ -55,11 +55,21 @@
                                 <li><a href="calories-burned-by-activities.html">Calories Burned by Activities</a></li>
                                 <li><a href="BMI-body-mass-calculator.html">BMI Body Mass Calculator</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
+                        </div>
                     </li>
-                    <li class="drop-normal">
-                        <a href="programs.html">Programs</a>
-                    </li>			
+                    
+                    <li class="drop-normal"><a href="#" class="drop-down">Programs</a>
+                        <div class="drop-down-container normal">
+                            <ul>
+                                <li><a href="cardio_program.html">Cardio Program</a></li>
+                                <li><a href="strength-training.html">Strength Training Program</a></li>
+                                <li><a href="#">TRX - Coming Soon</a></li>
+                                <li><a href="#">Pre/Post Natal - Coming Soon</a></li>
+                            </ul>
+                        </div><!-- End dropdown normal -->
+                    </li>       
+                    <li><a href="blog.html">Blog</a></li>
+                    <!--			
     				<li class="drop-normal"><a href="#" class="drop-down">Pages</a>
                         <div class="drop-down-container normal">
                              <ul>
@@ -70,27 +80,29 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
-                    </li>				
+                        </div>
+                    </li>				 -->
+                    <li><a href="contacts.html">Contact</a></li>
     			</ul>
 			</nav>
 		</div> <!-- End col lg 12 -->
+	   <div id="header_shadow"></div>
 	</header>
     
 	<div class="row" id="row-main">
-		<div class="col-lg-6 col-md-5" id="main-img-container">
+		<!-- <div class="col-lg-6 col-md-5" id="main-img-container">
 			<div id="main-img"  >
 				<img src="img/01.jpg" alt=""/>
-			</div><!-- End main-img -->
-		</div><!-- End main-img-container -->
-        
-		<div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+			</div>
+		</div>
+         -->
+		<div class="col-lg-6 col-md-7 col-md-offset-3 contact-wrapper">
 			<div class="row" id="content-row">
                 
 				<div class="col-md-12">
-				 <h1>Contact Activity</h1>
+				 <h1>Please feel free to contact us</h1>
 				<p class="lead">
-					 Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel labore nostrum periculis ius in.
+					 Fitwork is currently accepting new clients throught <a href="http://www.gymify.me" target="_blank" title="www.gymify.me">www.gymify.me</a>!
 				</p>
 
 				<hr>
@@ -137,23 +149,21 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="form-group">
-								<input type="submit" value="Submit" class=" button_medium" id="submit-contact"/>
+								<input type="submit" value="Submit" class="button_medium" id="submit-contact"/>
 							</div>
 						</div>
 					</div>
-				</form>
-                
-                <footer>
-                    	<p>Copyright © 2014</p>
-                        <ul id="contact_follow">
-                            <li><a href="#"><span class="icon-instagram"></span></a></li>
-                            <li><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li><a href="#"><span class=" icon-googleplus"></span></a></li>
-                        </ul>  
-                    </footer><!-- End footer -->       
-                
+				</form>            
 			</div><!-- End col-md-12 -->
+		    <footer class="contact-footer">
+            	<p>Copyright © 2016</p>
+                 <ul id="contact_follow">
+                    <li><a target="_blank" href="https://www.instagram.com/fitwork.ca/"><span class="icon-instagram"></span></a></li>
+                    <!-- <li><a href="#"><span class="icon-facebook"></span></a></li>
+                    <li><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li><a href="#"><span class=" icon-googleplus"></span></a></li> -->
+                </ul>  
+            </footer><!-- End footer -->       
 		</div><!-- End content-row -->
 	</div><!-- End col-lg-6-->
 </div><!-- End main-row -->

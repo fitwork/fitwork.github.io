@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -32,7 +32,7 @@
   <body>
 <!-- Preloader -->
 <div id="preloader">
-	<div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></div>
+	<div id="status"><img src="img/fitwork-black-horizontal.png" alt="Fitwork Fitness Logo"></div>
 </div>
 <!--  end Preloader -->
 
@@ -40,10 +40,11 @@
  
 	<header>
 		<div id="logo" data-retina="true">
-			<a href="index.html"><h1 class="fw-icon-fitwork-black"></h2></a>
+			<!-- <a href="index.html"><h1 class="fw-icon-fitwork-black"></h1></a> -->
+            <a href="index.html"><img src="img/fitwork-black-horizontal-pink.png" alt="Fitwork Fitness Logo"></a>
 		</div>
-		<div class="col-md-12 col-sm-12">
-			<a id="menu-button-mobile" href="#"><i class=" icon-menu"></i></a><!-- Menu button responsive-->
+		<div>
+			<a id="menu-button-mobile" href="#"><i class="icon-menu"></i></a><!-- Menu button responsive-->
             
 			<nav class="menu_container">
     			<ul class="menu">
@@ -56,11 +57,21 @@
                                 <li><a href="calories-burned-by-activities.html">Calories Burned by Activities</a></li>
                                 <li><a href="BMI-body-mass-calculator.html">BMI Body Mass Calculator</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
+                        </div>
                     </li>
-                    <li class="drop-normal">
-                        <a href="programs.html">Programs</a>
-                    </li>			
+                    
+                    <li class="drop-normal"><a href="#" class="drop-down">Programs</a>
+                        <div class="drop-down-container normal">
+                            <ul>
+                                <li><a href="cardio_program.html">Cardio Program</a></li>
+                                <li><a href="strength-training.html">Strength Training Program</a></li>
+                                <li><a href="#">TRX - Coming Soon</a></li>
+                                <li><a href="#">Pre/Post Natal - Coming Soon</a></li>
+                            </ul>
+                        </div><!-- End dropdown normal -->
+                    </li>          
+                    <li><a href="blog.html">Blog</a></li>
+                    <!--			
     				<li class="drop-normal"><a href="#" class="drop-down">Pages</a>
                         <div class="drop-down-container normal">
                              <ul>
@@ -71,17 +82,18 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
-                    </li>				
+                        </div>
+                    </li>				 -->
+                    <li><a href="contacts.html">Contact</a></li>
     			</ul>
 			</nav>
 		</div> <!-- End col lg 12 -->
-	<!-- <div id="header_shadow"></div> -->
+	   <div id="header_shadow"></div>
 	</header>
         
 	<div class="flexslider">
         <ul class="slides">
-            <li style="background: url(img/main-slider/main-slide-1.jpg) center -200px no-repeat"></li> 	  	    	
+            <li style="background: url(img/main-slider/main-slide-1.jpg) center no-repeat"></li> 	  	    	
             <li style="background: url(img/main-slider/main-slide-2.jpg) center no-repeat"></li>
             <li style="background: url(img/main-slider/main-slide-3.jpg) center no-repeat"></li>
             <li style="background: url(img/main-slider/main-slide-4.jpg) center"></li>
@@ -147,3 +159,4 @@
 
   </body>
 </html>
+

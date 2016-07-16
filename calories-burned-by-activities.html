@@ -5,7 +5,7 @@
 <html>
   <head>
   	<meta charset="utf-8">
-    <title>Activity - Calorie Burned by Activities</title>
+    <title>Fitwork - Calories Burned by Activity</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <!-- Favicons-->
@@ -28,23 +28,23 @@
     
   </head>
   <body>
-  <!-- Preloader -->
+ <!-- Preloader -->
 <div id="preloader">
-	<div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></div>
+    <div id="status"><img src="img/fitwork-black-horizontal.png" alt="Fitwork Fitness Logo"></div>
 </div>
 <!--  end Preloader -->
 
  <div id="main-wrapper">
  
-	<header>
-            <div id="logo" data-retina="true">
-                <a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40"></a>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <a id="menu-button-mobile" href="#"><i class=" icon-menu"></i></a><!-- Menu button responsive-->
-            </div>
-            <div class="col-md-6 col-sm-6 sub-nav-container">
-                <nav class="menu_container">
+    <header>
+        <div id="logo" data-retina="true">
+            <!-- <a href="index.html"><h1 class="fw-icon-fitwork-black"></h1></a> -->
+            <a href="index.html"><img src="img/fitwork-black-horizontal-pink.png" alt="Fitwork Fitness Logo"></a>
+        </div>
+        <div>
+            <a id="menu-button-mobile" href="#"><i class="icon-menu"></i></a><!-- Menu button responsive-->
+            
+            <nav class="menu_container">
                 <ul class="menu">
                     <li class="drop-normal">
                         <a href="#" class="drop-down">Calculators</a>
@@ -55,11 +55,21 @@
                                 <li><a href="calories-burned-by-activities.html">Calories Burned by Activities</a></li>
                                 <li><a href="BMI-body-mass-calculator.html">BMI Body Mass Calculator</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
+                        </div>
                     </li>
-                    <li class="drop-normal">
-                        <a href="programs.html">Programs</a>
-                    </li>           
+                    
+                    <li class="drop-normal"><a href="#" class="drop-down">Programs</a>
+                        <div class="drop-down-container normal">
+                            <ul>
+                                <li><a href="cardio_program.html">Cardio Program</a></li>
+                                <li><a href="strength-training.html">Strength Training Program</a></li>
+                                <li><a href="#">TRX - Coming Soon</a></li>
+                                <li><a href="#">Pre/Post Natal - Coming Soon</a></li>
+                            </ul>
+                        </div><!-- End dropdown normal -->
+                    </li>          
+                    <li><a href="blog.html">Blog</a></li>
+                    <!--            
                     <li class="drop-normal"><a href="#" class="drop-down">Pages</a>
                         <div class="drop-down-container normal">
                              <ul>
@@ -70,17 +80,20 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
                             </ul>
-                        </div><!-- End dropdown normal -->
-                    </li>               
+                        </div>
+                    </li>                -->
+                    <li><a href="contacts.html">Contact</a></li>
                 </ul>
             </nav>
-            </div> <!-- End col lg 12 -->
+        </div> <!-- End col lg 12 -->
+       <div id="header_shadow"></div>
     </header>
+    <!-- Header END ^^ -->
     
 	<div class="row" id="row-main">
 		<div class="col-lg-6 col-md-5" id="main-img-container">
-			<div id="main-img">
-				<img style="margin-left:-200px;" src="img/calories-burned-activity.jpg" alt=""/>
+			<div id="main-img" class='calories-activity'>
+				
 			</div><!-- End main-img -->
 		</div><!-- End main-img-container -->
         
@@ -88,11 +101,11 @@
 			<div class="row" id="content-row">
                 
 				<div class="col-md-12">
-					<h1>Calorie Burned by Activities</h1>
+					<h1>CALORIES BURNED BY ACTIVITY</h1>
 					<p class="lead">
-						Calorie Burned Calculator is used to estimate the number of calories burned after exercises.
+						When beginning a new exercise program it is beneficial to analyze your activity levels over a 24 hour period three-four days a week.
 					</p>
-                    <p> Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    <p> This will provide an indication of how active you are and where improvements can be incorporated into your current lifestyle helping you to become more successful in reaching your fitness goals.  We burn calories even when we sleep!  Balancing food intake and physical activity will help to maintain a healthy weight.</p>
 					<hr class="add_bottom_30">
                     
                     <form>
@@ -135,12 +148,12 @@
                             
                             <div class="form-group">
                             <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking17" value="0"></div>
-                            <input type="checkbox" name="walking17" id="walking17"><label for="walking17"><span></span>Walking, very slow, 1.7mph</label>
+                            <input type="checkbox" name="walking17" id="walking17"><label for="walking17"><span></span>Walking, very slow, 2.7 kmh</label>
                             </div>
                             
                             <div class="form-group">
                             <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking25" value="0"></div>
-                            <input type="checkbox" name="walking25" id="walking25"><label for="walking25"><span></span>Walking, 2.5mph</label>
+                            <input type="checkbox" name="walking25" id="walking25"><label for="walking25"><span></span>Walking, 4 kmh</label>
                             </div>
                             
                             <div class="form-group">
@@ -150,7 +163,7 @@
                             
                             <div class="form-group">
                             <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking30" value="0"></div>
-                            <input type="checkbox" name="walking30" id="walking30"><label for="walking30"><span></span>Walking, 3.0 mph</label>
+                            <input type="checkbox" name="walking30" id="walking30"><label for="walking30"><span></span>Walking, 4.8 kmh</label>
                             </div>
                             
                             <div class="form-group">
@@ -164,12 +177,12 @@
                                                        
                             <div class="form-group">
                             <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking34" value="0"></div>
-                            <input type="checkbox" name="walking34" id="walking34"><label for="walking34"><span></span>Walking 3.4 mph</label>
+                            <input type="checkbox" name="walking34" id="walking34"><label for="walking34"><span></span>Walking 5.4 kmh</label>
                             </div>
                             
                             <div class="form-group">
                             <div class="hours"> Hours <input type="text" class="textboxEffect" name="hours_bike10mph" value="0"></div>
-                            <input type="checkbox" name="bike10mph" id="bike10mph"><label for="bike10mph"><span></span>Bicycling, lower than 10 mph</label>
+                            <input type="checkbox" name="bike10mph" id="bike10mph"><label for="bike10mph"><span></span>Bicycling, lower than 16 kmh</label>
                             </div>
                             
                             <div class="form-group">
@@ -250,14 +263,14 @@
                 </div><!-- End result -->
                 
                 <footer>
-                    	<p>Copyright © 2014</p>
-                        <ul id="contact_follow">
-                            <li><a href="#"><span class="icon-instagram"></span></a></li>
-                            <li><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li><a href="#"><span class=" icon-googleplus"></span></a></li>
-                        </ul>  
-                    </footer><!-- End footer -->
+                    <p>Copyright &copy; 2016</p>
+                    <ul id="contact_follow">
+                        <li><a target="_blank" href="https://www.instagram.com/fitwork.ca/"><span class="icon-instagram"></span></a></li>
+                        <!-- <li><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li><a href="#"><span class=" icon-googleplus"></span></a></li> -->
+                    </ul>  
+                </footer><!-- End footer -->
                 
 			</div><!-- End col-md-12 -->
 		</div><!-- End content-row -->

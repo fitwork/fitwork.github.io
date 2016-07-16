@@ -31,6 +31,12 @@ $('input, textarea').placeholder();
 		})
 	//]]>
 
+$("footer > p").text(" ").append( "Copyright &copy; " + (new Date).getFullYear());
+if($("button:contains('Calculate')")){
+	$('button').css('float','right');
+}
+$("input[type=submit]").css('float', 'right');
+
 //accordion	
 function toggleChevron(e) {
 	 "use strict";
@@ -43,3 +49,8 @@ $('#accordion').on('hidden.bs.collapse', toggleChevron);
 $('#accordion').on('shown.bs.collapse', toggleChevron);
 $('#accordion').on('hidden.bs.collapse', function () {
 })
+
+// Replacing favicon with fitwork version
+var oldSrc = 'img/favicon.ico';
+var newSrc = 'img/favicon.png';
+$('link[href="' + oldSrc + '"]').attr('href', newSrc);

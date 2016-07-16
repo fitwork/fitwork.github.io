@@ -1,0 +1,24 @@
+Shit to fix: 
+
+	- 	Fix site nav for mobile and below
+	-	Logo
+	-	swap out images for program pages based on breakpoint
+	- 	Change list content @ template bottoms to an accordion list from bootstrap
+
+Shit to add:
+
+	-	Content
+	-	Forms
+	-	Paypal button
+	-	BMI calculator: have box colors change based on index range (obese === red, etc.)
+
+Shit to remove:
+
+	-	Figure out which sub-page templates need to go.
+
+Finished:
+
+	image conversions
+		Calculators
+		Cardio
+		PP
