@@ -667,7 +667,7 @@ ul.plan-features{
   border-radius: 4px;
   position:relative;
   z-index:9;
-   border: solid #8dc63f;
+  border: solid #E91E63;
    position:relative;
 }
 .ribbon {
@@ -691,7 +691,7 @@ line-height: 130px;
 font-size: 30px;
 font-weight: bold;
 color: white;
-background: #8dc63f;
+background: #E91E63;
 border-radius: 130px;
 -webkit-border-radius: 130px;
 -moz-border-radius: 130px;
@@ -1464,13 +1464,24 @@ h1 {
 		top:0;
 	}
 	.video{height: 250px;}
+
+	ul.data-lessons {
+		flex-wrap: wrap;
+	}
+
 	ul.data-lessons li{
 		display:block;
 		margin-left:0;
 		padding-left:0;
 		border-left: 0;
 		margin-top:5px;
+		flex: 2 0 auto;
 	}
+
+	ul.data-lessons li:last-of-type {
+		text-align: right;
+	}
+
 	.classes.media > .pull-left{float:none !important; margin-left:0;}
 
 	.daily-calories {
@@ -1491,5 +1502,14 @@ h1 {
 	}
 }
 
+
+.media-body ul {
+	display:flex;
+	align-items: center;
+}
+
+.media-body ul.first-list {
+	display: block;
+}
 
 
